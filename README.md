@@ -15,11 +15,11 @@
 
 ### Page Structure
 - [ ] Index
-      - [ ] List of products
-            - [ ] Inventary
-            - [ ] Price
-            - [ ] Discounts
-            - [ ] Add to cart
+  - [ ] List of products
+  - [ ] Inventary
+  - [ ] Price
+  - [ ] Discounts
+  - [ ] Add to cart
 
 - [ ] Cart (Under a Registered User)
       -  [ ] Total
