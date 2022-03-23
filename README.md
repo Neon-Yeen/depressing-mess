@@ -5,7 +5,7 @@
 ### General
 - [] Make design
 - [x] Make the respository
-- [] Make page (HTML4 & CSS3)
+- [] Make page (HTML5 & CSS3)
 
 ### Specific for the page
 - [] Responsive (bootstrap)
