@@ -1,6 +1,6 @@
-# depressing-mess 1.0
+# DEPRESSING MESS 1.0
 
-## Stuff to do
+## LIST OF TASKS
 
 ### General
 - [ ] Make design
@@ -22,25 +22,25 @@
   - [ ] Add to cart
 
 - [ ] Cart (Under a Registered User)
-      -  [ ] Total
-      -  [ ] Buy
-      -  [ ] Cancel
+  -  [ ] Total
+  -  [ ] Buy
+  -  [ ] Cancel
 
 - [ ] Suscription (Under a Registered User)
-      - [ ] Suscribe or Cancel Subcription
+  - [ ] Suscribe or Cancel Subcription
  
 - [ ] Usuario 
-      - [ ] Add or Delete
-      - [ ] Edit 
+  - [ ] Add or Delete
+  - [ ] Edit 
 
 - [ ] Follow Product (Under a Registered User)
-      - [ ] Item(s)
-      - [ ] Show date of arrival
-      - [ ] State
+  - [ ] Item(s)
+  - [ ] Show date of arrival
+  - [ ] State
 
-## Tutorial git
+## TUTORIAL GIT CLONE
 
--abran su terminal,cmd o powershell en windows
+Abran su terminal,cmd o powershell en windows
 
 **recuerden que tienen que tener git instalado en su sistema**
 
