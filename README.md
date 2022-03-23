@@ -1,12 +1,9 @@
 # depressing-mess 1.0
-
 ##Stuff to do
-
 ###General
 []Make design
 [x]Make the respository
 []Make page (HTML4 & CSS3)
-
 ###Specific for the page
 []Responsive (bootstrap)
 []Good user experience
