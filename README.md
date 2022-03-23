@@ -1,6 +1,6 @@
 # depressing-mess 1.0
 
-##Stuff to do:
+##Stuff to do
 
 ###General
 []Make design
