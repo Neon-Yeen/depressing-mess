@@ -3,40 +3,40 @@
 ## Stuff to do
 
 ### General
-- [  ] Make design
+- [ ] Make design
 - [x] Make the respository
-- [  ] Make page (HTML5 & CSS3)
+- [ ] Make page (HTML5 & CSS3)
  
 ### NF requirements
-- [  ] Responsive (bootstrap)
-- [  ] Good user experience
-- [  ] working in phones
-- [  ] working in pc
+- [ ] Responsive (bootstrap)
+- [ ] Good user experience
+- [ ] working in phones
+- [ ] working in pc
 
 ### Page Structure
-- [  ] Index
- - [  ] List of products
-  - [  ] Inventary
-  - [  ] Price
-  - [  ] Discounts
-  - [  ] Add to cart
+- [ ] Index
+      - [ ] List of products
+            - [ ] Inventary
+            - [ ] Price
+            - [ ] Discounts
+            - [ ] Add to cart
 
-- [  ] Cart (Under a Registered User)
--  [  ] Total
--  [  ] Buy
--  [  ] Cancel
+- [ ] Cart (Under a Registered User)
+      -  [ ] Total
+      -  [ ] Buy
+      -  [ ] Cancel
 
-- [  ] Suscription (Under a Registered User)
- - [  ] Suscribe or Cancel Subcription
+- [ ] Suscription (Under a Registered User)
+      - [ ] Suscribe or Cancel Subcription
  
-- [  ] Usuario 
- - [  ] Add or Delete
-  - [  ] Edit 
+- [ ] Usuario 
+      - [ ] Add or Delete
+      - [ ] Edit 
 
-- [  ] Follow Product (Under a Registered User)
- - [  ] Item(s)
- - [  ] Show date of arrival
- - [  ] State
+- [ ] Follow Product (Under a Registered User)
+      - [ ] Item(s)
+      - [ ] Show date of arrival
+      - [ ] State
 
 ## Tutorial git
 
@@ -46,31 +46,30 @@
 
 En el terminal deben colocar :
 
-'''
+```
 mkdir webtest
-'''
+```
 
-El comando **mkdir** (Make Directory) crea un directorio o carpeta, en este caso estamos creando la carpeta "webtest"
+El comando **MKDIR** (Make Directory) crea un directorio o carpeta, en este caso estamos creando la carpeta "webtest"
 
 Luego deben introducir :
 
-'''
+```
 cd webtest
-'''
+```
 
-El comando **cd** (Change Directory) cambia el directorio del terminal, es decir, nos permite movernos entre carpetas, en este caso estamos entrando a la carpeta que creamos anteriormente (webtest).
+El comando **CD** (Change Directory) cambia el directorio del terminal, es decir, nos permite movernos entre carpetas, en este caso estamos entrando a la carpeta que creamos anteriormente (webtest).
 
 Ahora que estamos dentro de la carpeta, clonaremos el repositorio con el comando :
 
-'''
+```
 git clone https://github.com/Neon-Yeen/depressing-mess.git
-'''
+```
 
 Este comando descarga el repositorio de nuestro trabajo.
 si todo sale bien dentro de su carpeta encontraran los archivos del repositorio.
 
-con el comando **dir** pueden ver el contenido de la carpeta actual.
-
+con el comando **DIR** pueden ver el contenido de la carpeta actual.
 
 
 
