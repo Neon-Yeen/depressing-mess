@@ -78,7 +78,7 @@ push changes to github (After using it for the first time, you can simply push g
 git push --set-upstream origin my-branch
 ```
 
-## Nomar Use
+## Nomal Use
 
 After you created your branch, if you want to start working on it you need to specify it to git, you can use the command.
 
