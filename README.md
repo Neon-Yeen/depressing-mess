@@ -38,38 +38,43 @@
   - [ ] Show date of arrival
   - [ ] State
 
-## TUTORIAL GIT CLONE
 
-Abran su terminal,cmd o powershell en windows
+## [Git Tutorial](https://docs.github.com/en/get-started/using-git/about-git)
 
-**recuerden que tienen que tener git instalado en su sistema**
-
-En el terminal deben colocar :
-
+# download a repository on GitHub to our machine
+# Replace `owner/repo` with the owner and name of the repository to clone
 ```
-mkdir webtest
+git clone https://github.com/owner/repo.git
 ```
-
-El comando **MKDIR** (Make Directory) crea un directorio o carpeta, en este caso estamos creando la carpeta "webtest"
-
-Luego deben introducir :
-
+# change into the `repo` directory
 ```
-cd webtest
+cd repo
 ```
 
-El comando **CD** (Change Directory) cambia el directorio del terminal, es decir, nos permite movernos entre carpetas, en este caso estamos entrando a la carpeta que creamos anteriormente (webtest).
-
-Ahora que estamos dentro de la carpeta, clonaremos el repositorio con el comando :
+# create a new branch to store any new changes
+```
+git branch my-branch
 
 ```
-git clone https://github.com/Neon-Yeen/depressing-mess.git
+# switch to that branch (line of development)
+```
+git checkout my-branch
+
+```
+# make changes, for example, edit `file1.md` and `file2.md` using the text editor
+
+# stage the changed files
+```
+git add file1.md file2.md
 ```
 
-Este comando descarga el repositorio de nuestro trabajo.
-si todo sale bien dentro de su carpeta encontraran los archivos del repositorio.
+# take a snapshot of the staging area (anything that's been added)
+```
+git commit -m "my snapshot"
+```
 
-con el comando **DIR** pueden ver el contenido de la carpeta actual.
-
-
+# push changes to github
+```
+git push --set-upstream origin my-branch
+```
 
