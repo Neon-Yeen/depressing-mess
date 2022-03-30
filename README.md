@@ -41,39 +41,39 @@
 
 ## [Git Tutorial](https://docs.github.com/en/get-started/using-git/about-git)
 
-# download a repository on GitHub to our machine
-# Replace `owner/repo` with the owner and name of the repository to clone
+download a repository on GitHub to our machine
+Replace `owner/repo` with the owner and name of the repository to clone
 ```
 git clone https://github.com/owner/repo.git
 ```
-# change into the `repo` directory
+change into the `repo` directory
 ```
 cd repo
 ```
 
-# create a new branch to store any new changes
+create a new branch to store any new changes
 ```
 git branch my-branch
 
 ```
-# switch to that branch (line of development)
+switch to that branch (line of development)
 ```
 git checkout my-branch
 
 ```
-# make changes, for example, edit `file1.md` and `file2.md` using the text editor
+make changes, for example, edit `file1.md` and `file2.md` using the text editor
 
-# stage the changed files
+stage the changed files
 ```
 git add file1.md file2.md
 ```
 
-# take a snapshot of the staging area (anything that's been added)
+take a snapshot of the staging area (anything that's been added)
 ```
 git commit -m "my snapshot"
 ```
 
-# push changes to github
+push changes to github (After using it for the first time, you can simply push git ```git push```)
 ```
 git push --set-upstream origin my-branch
 ```
