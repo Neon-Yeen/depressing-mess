@@ -73,7 +73,7 @@ take a snapshot of the staging area (anything that's been added)
 git commit -m "my snapshot"
 ```
 
-push changes to github
+push changes to github (After using it for the first time, you can simply push git ```git push```)
 ```
 git push --set-upstream origin my-branch
 ```
