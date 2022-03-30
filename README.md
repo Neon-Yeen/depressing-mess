@@ -78,3 +78,20 @@ push changes to github (After using it for the first time, you can simply push g
 git push --set-upstream origin my-branch
 ```
 
+## Nomar Use
+
+After you created your branch, if you want to start working on it you need to specify it to git, you can use the command.
+
+```
+git branch -a
+```
+
+This command list all the branchs in the respository.
+
+To start working on it use the command :
+```
+git checkout name-of-the-branch
+```
+The command **checkout** let's us move between branches.
+
+
