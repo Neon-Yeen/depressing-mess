@@ -1,0 +1,16 @@
+img.itemfp{
+    
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+p.ctp{
+    
+}
+
+a.cardlink,
+a.cardlink:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
