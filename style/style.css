@@ -1,8 +1,15 @@
+/* change the colors */
 img.itemfp{
     
     width: 200px;
     height: 200px;
     margin: auto;
+}
+
+img.carouselfp{
+
+    width: 800px;
+    height: 400px;
 }
 
 p.ctp{
@@ -14,3 +21,9 @@ a.cardlink:hover {
     color: inherit;
     text-decoration: inherit;
 }
+
+a.plainlink {
+    color: inherit;
+    text-decoration: inherit;
+
+:

@@ -9,7 +9,7 @@
 
 
     <link rel="stylesheet" href="style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
 </head>
@@ -17,7 +17,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <nav class="navbar navbar-expand-xl navbar-light bg-primary">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand"> <i class="bi-flower1"></i> Planteria</a>
 
@@ -40,7 +40,7 @@
 
                             </ul>
                         </li>
-                        <li><a href="#" class="nav-item nav-link active"><i class="bi-suit-heart"></i> Suscripcion</a></li>
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-suit-heart"></i> Suscripcion</a></li>
 
                     </ul>
 
@@ -52,8 +52,10 @@
                     </form>
 
                     <ul class="navbar-nav">
-                        <li><a href="#" class="nav-item nav-link active"><i class="bi-person-circle"></i> Ingresar</a></li>
-                        <li><a href="#" class="nav-item nav-link active"><i class="bi-basket"></i> Mis compras</a></li>
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-person-circle"></i> Ingresar</a></li>
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-basket"></i> Canasta</a></li>
+
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-truck"></i> Seguimiento</a></li>
                     </ul>
                 </div>
 
@@ -75,13 +77,13 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/carousel/flowerrz..JPG" alt="Los Angeles" class="d-block w-100">
+                    <img src="assets/img/carousel/flowerrz..JPG" alt="Los Angeles" class="carouselfp d-block w-100 ">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/carousel/gardening-toolsrz.jpg" alt="Chicago" class="d-block w-100">
+                    <img src="assets/img/carousel/gardening-toolsrz.jpg" alt="Chicago" class="carouselfp d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/carousel/kidsrz.jpg" alt="New York" class="d-block w-100">
+                    <img src="assets/img/carousel/kidsrz.jpg" alt="New York" class="carouselfp d-block w-100">
                 </div>
             </div>
 
@@ -93,8 +95,8 @@
       <span class="carousel-control-next-icon"></span>
     </button>
         </div>
-
-        <div class="py-5 bg-white">
+        <div class="container-fluid bg-secondary">
+        <div class="py-5 ">
             <div class="container" id="plants">
                 <div class="row">
                     <p>
@@ -118,7 +120,6 @@
                     </div>
                     <div class="col">
                         <a href="404.html" class="cardlink">
-                            <h1 class="fw-light"></h1>
                             <div class="card shadow-sm">
                                 <img class="itemfp" src="assets/img/plantas/leaves.png" alt="Menta" </svg>
                                 <div class="card-body">
@@ -131,7 +132,6 @@
 
                     <div class="col">
                         <a href="404.html" class="cardlink">
-                            <h1 class="fw-light"> </h1>
                             <div class="card shadow-sm">
                                 <img class="itemfp" src="assets/img/plantas/lilac.png" alt="lilac" </svg>
                                 <div class="card-body">
@@ -245,23 +245,22 @@
                 </div>
             </div>
         </div>
+        </div>
 
     </main>
 
-    <footer class="text-muted py-5">
+    <footer class=" py-3 bg-primary">
         <div class="container">
             <p class="float-end mb-1">
-                <a href="#">Back to top</a>
+                <a href="#">Volver al inicio</a>
             </p>
-            <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-            <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+            <p class="mb-1"> <a class="plainlink" href="index.html">Planteria&trade;</a>
+                es parte the 
+                <a class="plainlink" href="404.html">Honk&reg;</a>
+            </p>
         </div>
     </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
