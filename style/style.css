@@ -12,6 +12,17 @@ img.carouselfp{
     height: 400px;
 }
 
+.container {
+    padding: 0px;
+}
+
+nav.navbar {
+    width: inherit;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 p.ctp{
     
 }
