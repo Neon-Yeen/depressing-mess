@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body class="bg-secondary">
 
     <header>
         <nav class="navbar navbar-expand-xl navbar-light bg-primary">
@@ -34,7 +34,7 @@
                             </a>
                             <ul class="dropdown-menu">
 
-                                <li><a href="#plant" class="dropdown-item">Plantas</a></li>
+                                <li><a href="#plants" class="dropdown-item">Plantas</a></li>
                                 <li><a href="#tools" class="dropdown-item">Herramientas</a></li>
                                 <li><a href="#pots" class="dropdown-item">Maceteros</a></li>
 
@@ -64,82 +64,187 @@
     </header>
 
     <main>
-        <!-- Carousel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="container-fluid">
+            <div class="row py-3">
+                <div class="col">
+                    <!-- Carousel -->
+                    <div id="carouselmain" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        <!-- index -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <!-- contenido-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container-fluid">
+                                    <div class="d-flex justify-content-center ">
+                                        <img src="assets/img/carousel/cactus1.jpg" alt="Los Angeles" class="carouselfp d-block w-100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <div class="d-flex justify-content-center ">
+                                        <img src="assets/img/carousel/kids2.jpg" alt="Los Angeles" class="carouselfp d-block w-100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <div class="d-flex justify-content-center ">
+                                        <img src="assets/img/carousel/flower1.jpg" alt="Los Angeles" class="carouselfp d-block w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- controles -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmain" data-bs-slide="prev">
+                         <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmain" data-bs-slide="next">
+                          <span class="carousel-control-next-icon d-flex justify-content-end"></span>
+                    </button>
+                    </div>
+                </div>
             </div>
-
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/carousel/flowerrz..JPG" alt="Los Angeles" class="carouselfp d-block w-100 ">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/carousel/gardening-toolsrz.jpg" alt="Chicago" class="carouselfp d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/carousel/kidsrz.jpg" alt="New York" class="carouselfp d-block w-100">
-                </div>
-            </div>
-
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
         </div>
-        <div class="container-fluid bg-secondary">
-        <div class="py-5 ">
-            <div class="container" id="plants">
-                <div class="row">
-                    <p>
-                        <h1>Plantas/Flores</h1>
-                    </p>
+
+        <!-- productos -->
+        <div class="container-fluid  bg-secondary">
+            <div class="py-5 ">
+                <div class="container" id="plants">
+                    <div class="row">
+                        <p>
+                            <h1>Plantas/Flores</h1>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="container p-2 border">
+                <div class="container p-2 border">
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <a href="404.html" class="cardlink">
-                            <div class="card shadow-sm">
-                                <img class="itemfp" src="assets/img/plantas/bonsai.png" alt="Bonsai" </svg>
-                                <div class="card-body">
-                                    <p class="card-title font-weight-light"><small>Arbol Bonsai</small></p>
-                                    <p class="card-text"><b>$ 699.990</b></p>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <a href="404.html" class="cardlink">
+                                <div class="card shadow-sm">
+                                    <img class="itemfp mt-2" src="assets/img/plantas/bonsai.png" alt="Bonsai" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>Arbol bonsai</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ 699.990 UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="404.html" class="cardlink">
-                            <div class="card shadow-sm">
-                                <img class="itemfp" src="assets/img/plantas/leaves.png" alt="Menta" </svg>
-                                <div class="card-body">
-                                    <p class="card-title font-weight-light"><small>Menta</small></p>
-                                    <p class="card-text"><b>$ 80.000</b></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="404.html" class="cardlink">
+                                <div class="card shadow-sm">
+                                    <img class="itemfp mt-2" src="assets/img/plantas/leaves.png" alt="Menta" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>Planta menta</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ 80.000 UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <div class="col">
-                        <a href="404.html" class="cardlink">
-                            <div class="card shadow-sm">
-                                <img class="itemfp" src="assets/img/plantas/lilac.png" alt="lilac" </svg>
-                                <div class="card-body">
-                                    <p class="card-title font-weight-light"><small>Flores Mordac</small></p>
-                                    <p class="card-text"><b>$ 99.990</b></p>
+                        <div class="col">
+                            <a href="404.html" class="cardlink">
+                                <div class="card shadow-sm">
+                                    <img class="itemfp mt-2" src="assets/img/plantas/lilac.png" alt="lilac" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>Flores Mordac</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ 99.990 UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
+
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <a href="404.html" class="cardlink">
+                                <div class="card shadow-sm">
+                                    <img class="itemfp mt-2" src="assets/img/plantas/albahaca.jpeg" alt="lilac" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>Albahaca</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ 12.990 UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <a href="404.html" class="cardlink">
+                                <div class="card shadow-sm">
+                                    <img class="itemfp mt-2" src="assets/img/plantas/monsteraadansi.jpg" alt="lilac" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>Monstera Adansi</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ 20.000 UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <a href="404.html" class="cardlink">
+                                <div class="card shadow-sm">
+                                    <img class="itemfp mt-2" src="assets/img/plantas/corpseflower.jpg" alt="lilac" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>Planta Cadaver</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ 50.000 UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -157,10 +262,17 @@
                     <div class="col">
                         <a href="404.html" class="cardlink">
                             <div class="card shadow-sm">
-                                <img class="itemfp" src="assets/img/herramientas/tijera.png" alt="tijeras" </svg>
+                                <img class="itemfp mt-2" src="assets/img/herramientas/tijera.png" alt="tijera" </svg>
                                 <div class="card-body">
-                                    <p class="card-title font-weight-light"><small>Tijeras</small></p>
-                                    <p class="card-text"><b>$ 80.000</b></p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-title font-weight-light"><small>Tijeras</small></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <p class="card-text"><b>$ 10.000 UND</b></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -169,10 +281,17 @@
                     <div class="col">
                         <a href="404.html" class="cardlink">
                             <div class="card shadow-sm">
-                                <img class="itemfp" src="assets/img/herramientas/Mini-Pala.png" alt="Mini-Pala" </svg>
+                                <img class="itemfp mt-2" src="assets/img/herramientas/Mini-Pala.png" alt="Mini-Pala" </svg>
                                 <div class="card-body">
-                                    <p class="card-title font-weight-light"><small>Mini Pala</small></p>
-                                    <p class="card-text"><b>$ 12.990</b></p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-title font-weight-light"><small>Pala pequeña</small></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <p class="card-text"><b>$ 12.990 UND</b></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -181,15 +300,21 @@
                     <div class="col">
                         <a href="404.html" class="cardlink">
                             <div class="card shadow-sm">
-                                <img class="itemfp" src="assets/img/herramientas/machete.png" alt="machete" </svg>
+                                <img class="itemfp mt-2" src="assets/img/herramientas/machete.png" alt="machete" </svg>
                                 <div class="card-body">
-                                    <p class="card-title font-weight-light"><small>Machete</small></p>
-                                    <p class="card-text"><b>$ 30.000</b></p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-title font-weight-light"><small>Machete</small></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <p class="card-text"><b>$ 20.000 UND</b></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
-
                 </div>
             </div>
 
@@ -201,17 +326,24 @@
                 </div>
             </div>
 
-            <div class="container p-2 border">
+            <div class="container mb-2 py-2 border">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <!-- aqui empieza la parte de tarjetas de  maceteros -->
 
                     <div class="col">
                         <a href="404.html" class="cardlink">
                             <div class="card shadow-sm">
-                                <img class="itemfp" src="assets/img/maceteros/mchiquito.png" alt="macetero pequeño" </svg>
+                                <img class="itemfp mt-2" src="assets/img/maceteros/mchiquito.png" alt="macetero pequeño" </svg>
                                 <div class="card-body">
-                                    <p class="card-title font-weight-light"><small>Macetero de plastico chico</small></p>
-                                    <p class="card-text"><b>$ 8.000</b></p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-title font-weight-light"><small>Macetero pequeño</small></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <p class="card-text"><b>$ 2.000 UND</b></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -220,10 +352,17 @@
                     <div class="col">
                         <a href="404.html" class="cardlink">
                             <div class="card shadow-sm">
-                                <img class="itemfp" src="assets/img/maceteros/mcsoporte.png" alt="macetero con soporte" </svg>
+                                <img class="itemfp mt-2" src="assets/img/maceteros/mcsoporte.png" alt="macetero con soporte" </svg>
                                 <div class="card-body">
-                                    <p class="card-title font-weight-light"><small>Macetero + Soporte de metal</small></p>
-                                    <p class="card-text"><b>$ 50.000</b></p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-title font-weight-light"><small>Macetero mediano + Soporte de metal</small></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <p class="card-text"><b>$ 30.990 UND</b></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -232,10 +371,17 @@
                     <div class="col">
                         <a href="404.html" class="cardlink">
                             <div class="card shadow-sm">
-                                <img class="itemfp" src="assets/img/maceteros/mgrande.png" alt="macetero grande" </svg>
+                                <img class="itemfp mt-2" src="assets/img/maceteros/mgrande.png" alt="macetero grande" </svg>
                                 <div class="card-body">
-                                    <p class="card-title font-weight-light"><small>Macetero extra grande</small></p>
-                                    <p class="card-text"><b>$ 20.000</b></p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-title font-weight-light"><small>Macetero grande</small></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <p class="card-text"><b>$ 10.000 UND</b></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -254,8 +400,7 @@
             <p class="float-end mb-1">
                 <a href="#">Volver al inicio</a>
             </p>
-            <p class="mb-1"> <a class="plainlink" href="index.html">Planteria&trade;</a>
-                es parte the 
+            <p class="mb-1"> <a class="plainlink" href="index.html">Planteria&trade;</a> es parte the
                 <a class="plainlink" href="404.html">Honk&reg;</a>
             </p>
         </div>
