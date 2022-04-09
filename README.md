@@ -3,33 +3,33 @@
 ## LIST OF TASKS
 
 ### General
-- [ ] Make design
+- [x] Make design
 - [x] Make the respository
-- [ ] Make page (HTML5 & CSS3)
+- [x] Make page (HTML5 & CSS3)
  
 ### NF requirements
-- [ ] Responsive (bootstrap)
+- [x] Responsive (bootstrap)
 - [ ] Good user experience
-- [ ] working in phones
-- [ ] working in pc
+- [x] working in phones
+- [x] working in pc
 
 ### Page Structure
-- [ ] Index
-  - [ ] List of products
+- [x] Index
+  - [x] List of products
   - [ ] Inventary
-  - [ ] Price
+  - [x] Price
   - [ ] Discounts
-  - [ ] Add to cart
+  - [x] Add to cart
 
-- [ ] Cart (Under a Registered User)
+- [x] Cart (Under a Registered User)
   -  [ ] Total
   -  [ ] Buy
   -  [ ] Cancel
 
-- [ ] Suscription (Under a Registered User)
+- [x] Suscription (Under a Registered User)
   - [ ] Suscribe or Cancel Subcription
  
-- [ ] Usuario 
+- [x] Usuario 
   - [ ] Add or Delete
   - [ ] Edit 
 
