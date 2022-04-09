@@ -1,215 +1,411 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>Planteria</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+
     <link rel="stylesheet" href="style/style.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+</head>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+<body class="bg-secondary">
 
-    
-  </head>
-  <body>
-    
-<header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Planteria</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </div>
-</header>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light bg-primary">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"> <i class="bi-flower1"></i> Planteria</a>
 
-<main>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nbcollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
-      </div>
-    </div>
-  </section>
+                <div class="collapse navbar-collapse justify-content-between" id="nbcollapse">
 
-  <div class="album py-5 bg-light">
-    <div class="container">
+                    <ul class="navbar-nav">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        
-        <div class="col">
-            <a href="404.html" class="cardlink">
-                <div class="card shadow-sm">
-                    <img class="itemfp" src="assets/img/plantas/bonsai.png" alt="machete"</svg>
-                        <div class="card-body">
-                            <p class="card-title font-weight-light"><small>Arbol Bonsai</small></p>
-                            <p class="card-text"><b>$ 700.000</b></p>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"> <i class="bi-tag"></i> Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="#plants" class="dropdown-item">Plantas</a></li>
+                                <li><a href="#tools" class="dropdown-item">Herramientas</a></li>
+                                <li><a href="#pots" class="dropdown-item">Maceteros</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-suit-heart"></i> Suscripcion</a></li>
+
+                    </ul>
+
+                    <form class="d-flex col-sm-6">
+                        <div class="input-group">
+                            <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
+                            <input type="text" class="form-control" placeholder="Buscar...">
                         </div>
+                    </form>
+
+                    <ul class="navbar-nav">
+                        <li><a href="login.html" class="nav-item nav-link active"><i class="bi-person-circle"></i> Ingresar</a></li>
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-basket"></i> Canasta</a></li>
+
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-truck"></i> Seguimiento</a></li>
+                    </ul>
                 </div>
-            </a>
-        </div>
- <div class="col">
-            <a href="404.html" class="cardlink">
-                <div class="card shadow-sm">
-                    <img class="itemfp" src="assets/img/plantas/bonsai.png" alt="machete"</svg>
-                        <div class="card-body">
-                            <p class="card-title font-weight-light"><small>Arbol Bonsai</small></p>
-                            <p class="card-text"><b>$ 700.000</b></p>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row py-3">
+                <div class="col">
+                    <!-- Carousel -->
+                    <div id="carouselmain" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+                        <!-- index -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                         </div>
-                </div>
-            </a>
-        </div>
 
- <div class="col">
-            <a href="404.html" class="cardlink">
-                <div class="card shadow-sm">
-                    <img class="itemfp" src="assets/img/plantas/bonsai.png" alt="machete"</svg>
-                        <div class="card-body">
-                            <p class="card-title font-weight-light"><small>Arbol Bonsai</small></p>
-                            <p class="card-text"><b>$ 700.000</b></p>
+                        <!-- contenido-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container-fluid">
+                                    <div class="d-flex justify-content-center ">
+                                        <img src="assets/img/carousel/cactus1.jpg" alt="Los Angeles" class="carouselfp d-block w-100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <div class="d-flex justify-content-center ">
+                                        <img src="assets/img/carousel/kids2.jpg" alt="Los Angeles" class="carouselfp d-block w-100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <div class="d-flex justify-content-center ">
+                                        <img src="assets/img/carousel/flower1.jpg" alt="Los Angeles" class="carouselfp d-block w-100">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- controles -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmain" data-bs-slide="prev">
+                         <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmain" data-bs-slide="next">
+                          <span class="carousel-control-next-icon d-flex justify-content-end"></span>
+                    </button>
+                    </div>
                 </div>
-            </a>
+            </div>
         </div>
 
- <div class="col">
-            <a href="404.html" class="cardlink">
-                <div class="card shadow-sm">
-                    <img class="itemfp" src="assets/img/plantas/bonsai.png" alt="machete"</svg>
-                        <div class="card-body">
-                            <p class="card-title font-weight-light"><small>Arbol Bonsai</small></p>
-                            <p class="card-text"><b>$ 700.000</b></p>
+        <!-- productos -->
+        <div class="container-fluid  bg-secondary">
+            <div class="py-5 ">
+                <div class="container" id="plants">
+                    <div class="row">
+                        <p>
+                            <h1>Plantas/Flores</h1>
+                        </p>
+                    </div>
+                </div>
+                <div class="container p-2 border">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <a href="404.html" class="cardlink">
+                                <div class="card shadow-sm">
+                                    <img class="itemfp mt-2" src="assets/img/plantas/bonsai.png" alt="Bonsai" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>Arbol bonsai</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ 699.990 UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                </div>
-            </a>
-        </div>
-
- <div class="col">
-            <a href="404.html" class="cardlink">
-                <div class="card shadow-sm">
-                    <img class="itemfp" src="assets/img/plantas/bonsai.png" alt="machete"</svg>
-                        <div class="card-body">
-                            <p class="card-title font-weight-light"><small>Arbol Bonsai</small></p>
-                            <p class="card-text"><b>$ 700.000</b></p>
+                        <div class="col">
+                            <a href="404.html" class="cardlink">
+                                <div class="card shadow-sm">
+                                    <img class="itemfp mt-2" src="assets/img/plantas/leaves.png" alt="Menta" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>Planta menta</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ 80.000 UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                </div>
-            </a>
-        </div>
 
- <div class="col">
-            <a href="404.html" class="cardlink">
-                <div class="card shadow-sm">
-                    <img class="itemfp" src="assets/img/plantas/bonsai.png" alt="machete"</svg>
-                        <div class="card-body">
-                            <p class="card-title font-weight-light"><small>Arbol Bonsai</small></p>
-                            <p class="card-text"><b>$ 700.000</b></p>
+                        <div class="col">
+                            <a href="404.html" class="cardlink">
+                                <div class="card shadow-sm">
+                                    <img class="itemfp mt-2" src="assets/img/plantas/lilac.png" alt="lilac" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>Flores Mordac</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ 99.990 UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
                         </div>
-                </div>
-            </a>
-        </div>
 
- <div class="col">
-            <a href="404.html" class="cardlink">
-                <div class="card shadow-sm">
-                    <img class="itemfp" src="assets/img/plantas/bonsai.png" alt="machete"</svg>
-                        <div class="card-body">
-                            <p class="card-title font-weight-light"><small>Arbol Bonsai</small></p>
-                            <p class="card-text"><b>$ 700.000</b></p>
+                        <div class="col">
+                            <a href="404.html" class="cardlink">
+                                <div class="card shadow-sm">
+                                    <img class="itemfp mt-2" src="assets/img/plantas/albahaca.jpeg" alt="lilac" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>Albahaca</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ 12.990 UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
                         </div>
-                </div>
-            </a>
-        </div>
 
- <div class="col">
-            <a href="404.html" class="cardlink">
-                <div class="card shadow-sm">
-                    <img class="itemfp" src="assets/img/plantas/bonsai.png" alt="machete"</svg>
-                        <div class="card-body">
-                            <p class="card-title font-weight-light"><small>Arbol Bonsai</small></p>
-                            <p class="card-text"><b>$ 700.000</b></p>
+                        <div class="col">
+                            <a href="404.html" class="cardlink">
+                                <div class="card shadow-sm">
+                                    <img class="itemfp mt-2" src="assets/img/plantas/monsteraadansi.jpg" alt="lilac" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>Monstera Adansi</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ 20.000 UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
                         </div>
-                </div>
-            </a>
-        </div>
 
- <div class="col">
-            <a href="404.html" class="cardlink">
-                <div class="card shadow-sm">
-                    <img class="itemfp" src="assets/img/plantas/bonsai.png" alt="machete"</svg>
-                        <div class="card-body">
-                            <p class="card-title font-weight-light"><small>Arbol Bonsai</small></p>
-                            <p class="card-text"><b>$ 700.000</b></p>
+                        <div class="col">
+                            <a href="404.html" class="cardlink">
+                                <div class="card shadow-sm">
+                                    <img class="itemfp mt-2" src="assets/img/plantas/corpseflower.jpg" alt="lilac" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>Planta Cadaver</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ 50.000 UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
                         </div>
+
+                    </div>
                 </div>
-            </a>
+            </div>
+
+            <div class="container" id="tools">
+                <div class="row">
+                    <p>
+                        <h1>Herramientas</h1>
+                    </p>
+                </div>
+            </div>
+            <div class="container p-2 border">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <!-- aqui empieza la parte de tarjetas de  herramientas -->
+                    <div class="col">
+                        <a href="404.html" class="cardlink">
+                            <div class="card shadow-sm">
+                                <img class="itemfp mt-2" src="assets/img/herramientas/tijera.png" alt="tijera" </svg>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-title font-weight-light"><small>Tijeras</small></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <p class="card-text"><b>$ 10.000 UND</b></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="404.html" class="cardlink">
+                            <div class="card shadow-sm">
+                                <img class="itemfp mt-2" src="assets/img/herramientas/Mini-Pala.png" alt="Mini-Pala" </svg>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-title font-weight-light"><small>Pala pequeña</small></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <p class="card-text"><b>$ 12.990 UND</b></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="404.html" class="cardlink">
+                            <div class="card shadow-sm">
+                                <img class="itemfp mt-2" src="assets/img/herramientas/machete.png" alt="machete" </svg>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-title font-weight-light"><small>Machete</small></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <p class="card-text"><b>$ 20.000 UND</b></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="pots">
+                <div class="row">
+                    <p>
+                        <h1>Maceteros</h1>
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mb-2 py-2 border">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <!-- aqui empieza la parte de tarjetas de  maceteros -->
+
+                    <div class="col">
+                        <a href="404.html" class="cardlink">
+                            <div class="card shadow-sm">
+                                <img class="itemfp mt-2" src="assets/img/maceteros/mchiquito.png" alt="macetero pequeño" </svg>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-title font-weight-light"><small>Macetero pequeño</small></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <p class="card-text"><b>$ 2.000 UND</b></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="404.html" class="cardlink">
+                            <div class="card shadow-sm">
+                                <img class="itemfp mt-2" src="assets/img/maceteros/mcsoporte.png" alt="macetero con soporte" </svg>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-title font-weight-light"><small>Macetero mediano + Soporte de metal</small></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <p class="card-text"><b>$ 30.990 UND</b></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="404.html" class="cardlink">
+                            <div class="card shadow-sm">
+                                <img class="itemfp mt-2" src="assets/img/maceteros/mgrande.png" alt="macetero grande" </svg>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-title font-weight-light"><small>Macetero grande</small></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <p class="card-text"><b>$ 10.000 UND</b></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
         </div>
 
+    </main>
 
-
+    <footer class=" py-3 bg-primary">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Volver al inicio</a>
+            </p>
+            <p class="mb-1"> <a class="plainlink" href="index.html">Planteria&trade;</a> es parte the
+                <a class="plainlink" href="404.html">Honk&reg;</a>
+            </p>
         </div>
-    </div>
-  </div>
-
-</main>
-
-<footer class="text-muted py-5">
-  <div class="container">
-    <p class="float-end mb-1">
-      <a href="#">Back to top</a>
-    </p>
-    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
-  </div>
-</footer>
-
-
+    </footer>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
 
-      
-  </body>
 </html>

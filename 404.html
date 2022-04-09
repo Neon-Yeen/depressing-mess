@@ -1,10 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>404!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Planteria</title>
+
+
+    <link rel="stylesheet" href="style/style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
 </head>
-<body>
-    <h1><b>404!</b></h1>
+
+<body class="bg-secondary">
+
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light bg-primary">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"> <i class="bi-flower1"></i> Planteria</a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nbcollapse">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+
+                <div class="collapse navbar-collapse" id="nbcollapse">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-suit-heart"></i> Suscripcion</a></li>
+
+                    </ul>
+
+                    <form class="d-flex col-sm-6">
+                        <div class="input-group">
+                            <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
+                            <input type="text" class="form-control" placeholder="Buscar...">
+                        </div>
+                    </form>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li><a href="login.html" class="nav-item nav-link active"><i class="bi-person-circle"></i> Ingresar</a></li>
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-basket"></i> Canasta</a></li>
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-truck"></i> Seguimiento</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main>
+        <div class="container my-5 py-5">
+            <div class="d-flex justify-content-center">
+                <div class="row py-5">
+
+                    <div class="col-sm-6 d-flex justify-content-center justify-content-sm-end">
+                        <img src="assets/img/error404.gif" alt="confused dinosaur" width="128" height="128" />
+                    </div>
+
+                    <div class="col-sm-6 text-center text-md-start">
+                        <p>
+                            <h1><strong>Pagina en mantenimiento</strong></h1>
+                        </p>
+                        <p>
+                            <h4>Intentelo mas tarde</h4>
+                        </p>
+                    </div>
+
+                    <div class="col-sm-12 d-flex justify-content-center">
+                        <p><a href="index.html">Volver a la pagina principal</a></p>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer class="fixed-bottom py-3 bg-primary">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="index.html">Volver al inicio</a>
+
+            </p>
+            <p class="mb-1"> <a class="plainlink" href="index.html">Planteria&trade;</a> es parte the
+                <a class="plainlink" href="404.html">Honk&reg;</a>
+            </p>
+        </div>
+    </footer>
+    </div>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

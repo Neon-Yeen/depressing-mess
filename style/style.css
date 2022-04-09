@@ -1,16 +1,23 @@
-img.itemfp{
-    
+/* change the colors */
+
+img.itemfp {
     width: 200px;
     height: 200px;
     margin: auto;
 }
 
-p.ctp{
-    
+img.imgcarousel {
+    width: 1400px;
+    height: 100;
 }
 
 a.cardlink,
 a.cardlink:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a.plainlink {
     color: inherit;
     text-decoration: inherit;
 }
