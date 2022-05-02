@@ -21,3 +21,10 @@ a.plainlink {
     color: inherit;
     text-decoration: inherit;
 }
+
+body.fondo-login{
+    background-image: url(../assets/img/fondo-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
