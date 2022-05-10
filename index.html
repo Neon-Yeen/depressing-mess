@@ -14,10 +14,10 @@
 
 </head>
 
-<body class="bg-secondary">
+<body style=" background-color: #ebf2fa;">
 
     <header>
-        <nav class="navbar navbar-expand-xl navbar-light bg-primary">
+        <nav class="navbar navbar-expand-xl navbar-light" style=" background-color: #05668d;">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand"> <i class="bi-flower1"></i> Planteria</a>
 
@@ -40,11 +40,29 @@
 
                             </ul>
                         </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"> <i class="bi-cloud-sun"></i></i> Clima</a>
+                            <ul class="dropdown-menu">
+                                <div id="weather" class="card shadow-sm">
+                                    <div class="card-body text-center">
+                                        <div id="img" class=""></div>
+                                        <img src="/assets/img/weather/64x64/day/113.png" alt="">
+                                        <div id="city"></div>
+                                        <div id="temp"></div>
+                                        <div id="humd"></div>
+                                    </div>
+
+
+
+                            </ul>
+                        </li>
+
                         <li><a href="404.html" class="nav-item nav-link active"><i class="bi-suit-heart"></i> Suscripcion</a></li>
 
                     </ul>
 
-                    <form class="d-flex col-sm-6">
+                    <form class="d-flex col-sm-5    ">
                         <div class="input-group">
                             <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
                             <input type="text" class="form-control" placeholder="Buscar...">
@@ -57,9 +75,9 @@
 
                         <li><a href="404.html" class="nav-item nav-link active"><i class="bi-truck"></i> Seguimiento</a></li>
                     </ul>
-                </div>
+                    </div>
 
-            </div>
+                </div>
         </nav>
     </header>
 
@@ -116,7 +134,7 @@
         </div>
 
         <!-- productos -->
-        <div class="container-fluid  bg-secondary">
+        <div class="container-fluid" style=" background-color: #ebf2fa;">
             <div class="py-5 ">
                 <div class="container" id="plants">
                     <div class="row">
@@ -395,17 +413,29 @@
 
     </main>
 
-    <footer class=" py-3 bg-primary">
+    <footer class="py-1" style=" background-color: #05668d;">
         <div class="container">
-            <p class="float-end mb-1">
-                <a href="#">Volver al inicio</a>
-            </p>
-            <p class="mb-1"> <a class="plainlink" href="index.html">Planteria&trade;</a> es parte the
-                <a class="plainlink" href="404.html">Honk&reg;</a>
-            </p>
+            <div class="row">
+                <div class="col-12 col-md-3 my-md-3 d-flex justify-content-center ">
+                    <p class="mb-1"> <a class="plainlink" href="index.html">Planteria&trade;</a> es parte the
+                        <a class="plainlink" href="404honk.html">Honk&reg;</a>
+                    </p>
+
+                </div>
+
+                <div class="col-12 col-md-3 offset-md-6  d-flex justify-content-center">
+                    <ul>
+                        <li><a class="plainlink" href="index.html">Volver al inicio</a></li>
+                        <li><a class="plainlink" href="termsservices.html">Terminos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
         </div>
     </footer>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/weather.js"></script>
 </body>
 
 </html>

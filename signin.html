@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Planteria</title>
+
+
+    <link rel="stylesheet" href="style/style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+</head>
+
+<body class="fondo-login" style=" background-color: #ebf2fa;">
+
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light" style=" background-color: #05668d;">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"> <i class="bi-flower1"></i> Planteria</a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nbcollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nbcollapse">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-suit-heart"></i>
+                                Suscripcion</a></li>
+
+                    </ul>
+
+                    <form class="d-flex col-sm-6">
+                        <div class="input-group">
+                            <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
+                            <input type="text" class="form-control" placeholder="Buscar...">
+                        </div>
+                    </form>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li><a href="login.html" class="nav-item nav-link active"><i class="bi-person-circle"></i>
+                                Ingresar</a></li>
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-basket"></i> Canasta</a>
+                        </li>
+                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-truck"></i> Seguimiento</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main>
+        <div class="px-4 py-5 px-md-5 text-center text-lg-start">
+            <div class="container">
+                <div class="row gx-lg-5 align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h4 class="my-5 display-3 fw-bold ls-tight">
+                            <p style="color: #009c1a" class="bi-flower1"> PLANTERIA<br />
+                                <p style="color: #00dfdf">Estas a un <i class="bi bi-cursor-fill"></i>click de la mejor tienda de plantas en todo Chile
+                                    </span>
+                                    </h5>
+
+                    </div>
+
+                    <div class="col-lg-6 mb-5 pb-5 mb-lg-0">
+                        <div class="card rounded-3" style=" background-color: #ebf2fa;">
+                            <div class=" card-body py-4 px-md-4 ">
+                                <form name="login" onsubmit="return signin_validator()" action="input.html" method="get">
+
+
+                                    <!-- Names And Last Name -->
+                                    <div class="row ">
+                                        <div class="col-md-6">
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text ">@</span>
+                                                <input type="text " id="fname" class="form-control " name="first_name " placeholder="Nombre " />
+
+                                            </div>
+                                            <div id="fnwarning"></div>
+                                        </div>
+
+
+
+                                        <div class="col-md-6">
+                                            <div class="input-group mb-3 ">
+
+                                                <input type="text " id="lname" class="form-control " name="last_name" placeholder="Apellido" />
+
+                                            </div>
+                                            <div id="lnwarning"></div>
+                                        </div>
+                                    </div>
+                                    <!--RUT-->
+                                    <div class="row ">
+                                        <div class="col-md-6">
+                                            <div class="input-group mb-4 ">
+
+                                                <span class="input-group-text ">RUT</span>
+                                                <input type="text " id="rut" class="form-control " name="run" placeholder="11.111.111-1" />
+
+                                            </div>
+                                            <div id="rutwarning"></div>
+                                        </div>
+                                        <!--BIRTHDAY-->
+                                        <div class="col-md-6">
+                                            <div class="input-group mb-4 ">
+
+                                                <span class="input-group-text "><i class="bi-calendar-date"></i></span>
+                                                <input type="text" id="bdate" class="form-control " name="bird_date" placeholder="Fecha nac." onfocus="(this.type='date')" />
+
+                                            </div>
+                                            <div id="datewarning"></div>
+                                        </div>
+
+                                        <!--Region-->
+
+                                        <div class="col-md-6 ">
+                                            <div class="input-group mb-4">
+                                                <select class="form-select" name="Region2" id="rg">
+                                                    <option value="22" selected>Region</option>
+                                                    <option value="1">Arica y Parinacota y Tarapacá</option>
+                                                    <option value="2">Antofagasta</option>
+                                                    <option value="3">Atacama y Coquimbo</option>
+                                                    <option value="4">Valparaíso</option>
+                                                    <option value="5">O'Higgins</option>
+                                                    <option value="6">Maule</option>
+                                                    <option value="7">Ñuble, Biobío y La Araucanía</option>
+                                                    <option value="8">La Araucanía</option>
+                                                    <option value="9">Los Ríos y Los Lagos</option>
+                                                    <option value="10">Los Lagos (sur) y Aysén</option>
+                                                    <option value="11">Magallanes</option>
+                                                    <option value="0">Metropolitana de Santiago</option>
+
+                                                </select>
+                                            </div>
+                                            <div id="regwarning"></div>
+
+
+                                        </div>
+                                        <!--Address-->
+                                        <div class="col-md-6">
+                                            <div class="input-group mb-4 ">
+                                                <span class="input-group-text "><i class="bi-house"></i></span>
+                                                <input type="text " id="addr" class="form-control " name="user-address" placeholder="Direccion" />
+
+                                            </div>
+                                            <div id="addrwarning"></div>
+                                        </div>
+                                        <!--Phone Number-->
+
+
+                                        <div class="col-md-6">
+                                            <div class="input-group mb-4 ">
+                                                <span class="input-group-text "><i class="bi-phone"></i></span>
+                                                <input type="text" id="pnumber" class="form-control " name="phone_number" placeholder="Numero de Telefono" />
+
+                                            </div>
+                                            <div id="phonewarning"></div>
+                                        </div>
+
+
+                                        <!-- Email input -->
+
+
+                                        <div class="col-md-6">
+                                            <div class="input-group mb-4 ">
+                                                <span class="input-group-text "><i class="bi-mailbox"></i></span>
+                                                <input type="text" id="email" class="form-control " name="e-mail" placeholder="e-mail" />
+
+                                            </div>
+                                            <div id="mailwarning"></div>
+                                        </div>
+
+
+
+                                        <!--Password-->
+
+                                        <div class="col-md-8 offset-md-2">
+                                            <div class="input-group mb-4 ">
+                                                <span class="input-group-text "><i class="bi-lock"></i></span>
+                                                <input type="password" id="pwd1" class="form-control " name="password1" placeholder="Crea una contraseña" />
+
+                                            </div>
+                                            <div id="pwdwarning1"></div>
+                                        </div>
+
+
+                                        <div class="col-md-8 offset-md-2">
+                                            <div class="input-group mb-4 ">
+                                                <span class="input-group-text "><i class="bi-lock-fill"></i></span>
+                                                <input type="password" id="pwd2" class="form-control " name="password2" placeholder="Vuelve a escribir tu Contrasena" />
+
+                                            </div>
+                                            <div id="pwdwarning2"></div>
+                                        </div>
+
+                                        <!-- Checkbox -->
+                                        <div class="col-md-8 offset-md-2 mb-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="terms_conditions">
+                                                <label class="form-check-label" for="terms_conditions">
+                                                    <a  href="termsservices.html">Acepto los terminos y condiciones</a>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <!-- Submit button -->
+                                        <div class="col-md-5 offset-5">
+                                            <button type="submit" value="Send" class="btn btn-primary btn-block mb-4 ">Registrar</button>
+                                        </div>
+
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="py-1" style=" background-color: #05668d;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 my-md-3 d-flex justify-content-center ">
+                    <p class="mb-1"> <a class="plainlink" href="index.html">Planteria&trade;</a> es parte the
+                        <a class="plainlink" href="404honk.html">Honk&reg;</a>
+                    </p>
+
+                </div>
+
+                <div class="col-12 col-md-3 offset-md-6  d-flex justify-content-center">
+                    <ul>
+                        <li><a class="plainlink" href="index.html">Volver al inicio</a></li>
+                        <li><a class="plainlink" href="termsservices.html">Terminos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    </div>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="js/intern.js"></script>
+</body>
+
+</html>
