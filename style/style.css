@@ -53,3 +53,10 @@ body.fondo-login {
     background-size: cover;
     background-attachment: fixed;
 }
+
+body.fondo-warehouse {
+    background-image: url(../assets/img/warehouse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

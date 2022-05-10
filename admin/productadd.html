@@ -14,12 +14,12 @@
 
 </head>
 
-<body style=" background-color: #ebf2fa;">
+<body class="fondo-warehouse" style=" background-color: #ebf2fa;">
 
     <header>
         <nav class="navbar navbar-expand-xl navbar-light" style=" background-color: #05668d;">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand"> <i class="bi-flower1"></i> Planteria</a>
+                <a href="../index.html" class="navbar-brand"> <i class="bi-flower1"></i> Planteria</a>
 
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nbcollapse">
      <span class="navbar-toggler-icon"></span>
@@ -29,8 +29,6 @@
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-
-                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-suit-heart"></i> Suscripcion</a></li>
 
                     </ul>
 
@@ -42,9 +40,7 @@
                     </form>
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-person-circle"></i> Ingresar</a></li>
-                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-basket"></i> Canasta</a></li>
-                        <li><a href="404.html" class="nav-item nav-link active"><i class="bi-truck"></i> Seguimiento</a></li>
+                        <li><a href="../404.html" class="nav-item nav-link active"><i class="bi-truck"></i> Seguimiento</a></li>
                     </ul>
                 </div>
 
@@ -57,65 +53,54 @@
         <div class="container">
             <div class="d-flex justify-content-center">
                 <div class="row py-5">
-                    <div class="col rounded-3" style=" background-color: #05668d;">
+                    <div class="col rounded-3" style=" background-color: #ebf2fa;">
                         <div class=" d-flex justify-content-center my-3 ">
 
-                            <h4><i class="bi-flower1 "></i> Planteria
+                            <h4><i class="bi-box"></i> Producto+
                         </div>
                         </h2>
-                        <form name="login" onsubmit="return login_validator()" action="input.html" method="get">
+                        <form name="login" onsubmit="return iteminput_validator()" action="input.html" method="get">
                             <div class="input-group mb-3">
-                                <span class="input-group-text "><i class="bi-envelope"></i></span>
-                                <input id="email" placeholder="E-mail" type="text" class="form-control" name="mail" />
 
+                                <input id="pimg" type="file" class="form-control" name="product_img" />
                             </div>
 
-                            <div class="my-1" id="mailwarning"></div>
-
-                            <!-- Password input
-                            <div class="input-group mb-3 ">
-                                <span class="input-group-text " id="pwd "><i class="bi-envelope "></i></span>
-                                <input type="password " class="form-control " placeholder="Contrasena " />
-
-                            </div>  -->
-
-                            <div class="input-group mb-4 ">
-                                <span class="input-group-text "><i class="bi-lock "></i></span>
-                                <input type="password" id="pwd" class="form-control" name="password" placeholder="Contraseña" />
-
+                            <div class="input-group mb-3">
+                                <span class="input-group-text "><i class="bi-tag"></i></span>
+                                <input id="pname" placeholder="Nombre Producto" type="text" class="form-control" name="product_name" />
                             </div>
 
-                            <div id="pwdwarning"></div>
+                            <div id="pname_warning"></div>
 
-                            <!-- Checkbox -->
-                            <div class="d-flex justify-content-center mb-2 ">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="keep_logged">
-                                    <label class="form-check-label" for="keep_logged">
-                                        Mantener registrado
-                                    </label>
-                                </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text ">0$</span>
+                                <input id="pprice" placeholder="Precio" type="number" min="10" class="form-control" name="product_price" />
                             </div>
 
+                            <div class="input-group mb-3">
+                                <span class="input-group-text "><i class="bi-box2"></i></span>
 
-                            <div class="d-flex justify-content-center mb-3 ">
-                                <!-- Simple link -->
-                                <a href="404.html">Se te olvido la contaseña?</a>
+                                <input id="pstock" placeholder="Cantidad en bodega" type="number" min="1" class="form-control" name="product_Stock" />
                             </div>
+
+                            <div class="input-group mb-3">
+
+                                <textarea id="pdescription" class="form-control" aria-label="With textarea" placeholder="Descripcion producto" name="product_descp"></textarea>
+                            </div>
+
+                            <div id="pdescription_warning"></div>
 
 
                             <!-- Submit button -->
                             <div class="d-flex justify-content-center ">
-                                <button type="submit" value="Send" class="btn btn-primary btn-block mb-4 ">Entrar</button>
+                                <button type="submit" value="Send" class="btn btn-primary btn-block mb-4 ">Añadir</button>
                             </div>
-                            <!-- Register buttons -->
-                            <div class="text-center ">
-                                <p>No estas registrado?<a href="signin.html"> Registrate</a></p>
-                            </div>
-                        </form>
+
                     </div>
+                    </form>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 
@@ -123,16 +108,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-3 my-md-3 d-flex justify-content-center ">
-                    <p class="mb-1"> <a class="plainlink" href="index.html">Planteria&trade;</a> es parte the
-                        <a class="plainlink" href="404honk.html">Honk&reg;</a>
+                    <p class="mb-1"> <a class="plainlink" href="../index.html">Planteria&trade;</a> es parte the
+                        <a class="plainlink" href="../404honk.html">Honk&reg;</a>
                     </p>
 
                 </div>
 
                 <div class="col-12 col-md-3 offset-md-6  d-flex justify-content-center">
                     <ul>
-                        <li><a class="plainlink" href="index.html">Volver al inicio</a></li>
-                        <li><a class="plainlink" href="termsservices.html">Terminos y condiciones</a></li>
+                        <li><a class="plainlink" href="../index.html">Volver al inicio</a></li>
+                        <li><a class="plainlink" href="../termsservices.html">Terminos y condiciones</a></li>
                     </ul>
                 </div>
             </div>
@@ -144,6 +129,7 @@
 
 
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/intern.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-function login_validator() {
+function login_validator(obj) {
     var mailObj = document.getElementById('email');
     var pwdObj = document.getElementById('pwd');
     var warmail = document.getElementById('mailwarning');
@@ -148,4 +148,37 @@ function signin_validator(obj) {
 
     pwdObj1.value = sha256_1;
     pwdObj2.value = sha256_2;
+}
+
+
+function iteminput_validator(obj) {
+    var imgObj = document.getElementById('pimg');
+
+    var nameObj = document.getElementById('pname');
+    var warpname = document.getElementById('pname_warning');
+
+    var priceObj = document.getElementById('pprice');
+
+    var stockObj = document.getElementById('pstock');
+
+    var descriptionObj = document.getElementById('pdescription');
+    var warpdescription = document.getElementById('pdescription_warning');
+
+
+    warpname.innerHTML = "";
+    warpdescription.innerHTML = "";
+
+    console.log(descriptionObj.value)
+
+    if (nameObj.value == '') {
+        warpname.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">Ingresa un nombre</p>'
+        return false;
+    } else if (descriptionObj.value == '') {
+        warpdescription.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">Ingresa una descripcion</p>'
+        return false;
+    }
+
+    return true;
+
+
 }
