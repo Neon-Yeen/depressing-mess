@@ -32,8 +32,6 @@ function login_validator(obj) {
 
 }
 
-
-
 function signin_validator(obj) {
     var fnObj = document.getElementById('fname');
     var warfn = document.getElementById('fnwarning');
@@ -73,6 +71,11 @@ function signin_validator(obj) {
     var wardate = document.getElementById('datewarning');
     wardate.innerHTML = "";
 
+    // 0 = year 1 = month 3 = day
+    datenow = new Date().toISOString().split("T")[0].split("-");
+    dateinput = dateObj.value.split("-");
+
+
     var regionObj = document.getElementById('rg');
     var warregion = document.getElementById('regwarning');
     warregion.innerHTML = "";
@@ -83,6 +86,7 @@ function signin_validator(obj) {
 
     var phoneObj = document.getElementById('pnumber');
     var warphone = document.getElementById('phonewarning');
+    var phoneformat = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
     warphone.innerHTML = "";
 
     var mailObj = document.getElementById('email');
@@ -119,6 +123,15 @@ function signin_validator(obj) {
     } else if (dateObj.value == '') {
         wardate.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">Ingresa una fecha</p>'
         return false;
+    } else if (parseInt(dateinput[0]) > parseInt(datenow[0])) {
+        wardate.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">Año en el futuro</p>'
+        return false;
+    } else if ((parseInt(dateinput[0]) == parseInt(datenow[0])) && (parseInt(dateinput[1]) > parseInt(datenow[1]))) {
+        wardate.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">Mes en el futuro</p>'
+        return false;
+    } else if ((parseInt(dateinput[0]) == parseInt(datenow[0])) && (parseInt(dateinput[1]) == parseInt(datenow[1])) && (parseInt(dateinput[2]) > parseInt(datenow[2]))) {
+        wardate.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">Dia en el futuro</p>'
+        return false;
     } else if (regionObj.value == '22') {
         warregion.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">Ingresa una region</p>'
         return false;
@@ -127,6 +140,9 @@ function signin_validator(obj) {
         return false;
     } else if (phoneObj.value == '') {
         warphone.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">Ingresa un numero</p>'
+        return false;
+    } else if (!(phoneObj.value.match(phoneformat))) {
+        warphone.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">Ingresa un numero valido</p>'
         return false;
     } else if (!(mailObj.value.match(mailformat))) {
         warmail.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">E-mail invalido</p>'
@@ -157,6 +173,9 @@ function iteminput_validator(obj) {
     var nameObj = document.getElementById('pname');
     var warpname = document.getElementById('pname_warning');
 
+    var tagObj = document.getElementById('ptag');
+    var warptag = document.getElementById('ptag_warning');
+
     var priceObj = document.getElementById('pprice');
 
     var stockObj = document.getElementById('pstock');
@@ -167,11 +186,15 @@ function iteminput_validator(obj) {
 
     warpname.innerHTML = "";
     warpdescription.innerHTML = "";
+    warptag.innerHTML = "";
 
     console.log(descriptionObj.value)
 
     if (nameObj.value == '') {
         warpname.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">Ingresa un nombre</p>'
+        return false;
+    } else if (tagObj.value == '22') {
+        warptag.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">Ingresa un tag</p>'
         return false;
     } else if (descriptionObj.value == '') {
         warpdescription.innerHTML = '<p class="d-flex justify-content-center" style="color: #ff0000">Ingresa una descripcion</p>'
@@ -179,6 +202,19 @@ function iteminput_validator(obj) {
     }
 
     return true;
+}
 
 
+function search_tag() {
+    let input = document.getElementById('searchbar').value
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('animals');
+
+    for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = "none";
+        } else {
+            x[i].style.display = "list-item";
+        }
+    }
 }
