@@ -1,0 +1,117 @@
+/*Disable left and right scroll in pages, is only used in aboutUs.html for the flower design*/
+
+html.no-scroll-left,
+body.no-scroll-left {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*size and margin config for the pictures of products in the index.html */
+
+img.itemfp {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+
+/*width and height conf for the pictures in the carousel, index.html*/
+
+img.imgcarousel {
+    width: 1400px;
+    height: 100;
+}
+
+
+/*width and height conf for the images on the product list pictures, productadd.html*/
+
+img.imglist {
+    width: 32px;
+    height: 32px;
+}
+
+
+/*default link design*/
+
+a:link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+/*default hover link effect*/
+
+a:link:hover {
+    color: #05668d;
+    text-decoration: inherit;
+}
+
+
+/*Card link effect for the products in index.html*/
+
+a.cardlink,
+a.cardlink:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+/*second default link design*/
+
+a.plainlink {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+/*second default hover link design*/
+
+a.plainlink:hover {
+    color: #ebf2fa;
+    text-decoration: inherit;
+}
+
+
+/*blue default link design*/
+
+a.plainlink-blue {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+/*blue default hover link design*/
+
+a.plainlink-blue:hover {
+    color: #05668d;
+    text-decoration: inherit;
+}
+
+
+/*background design for the login and sigin pages*/
+
+body.fondo-login {
+    background-image: url('{%static "/assets/img/fondo-login.jpg"%}');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*background design for the productadd page*/
+
+body.fondo-warehouse {
+    background-image: url(../assets/img/warehouse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*size of the google maps map in the aboutUs page*/
+
+div.map {
+    height: 400px;
+    width: 700px;
+}

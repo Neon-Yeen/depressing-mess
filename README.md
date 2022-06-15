@@ -16,7 +16,7 @@
 ### Page Structure
 - [x] Index
   - [x] List of products
-  - [ ] Inventary
+  - [x] Inventary
   - [x] Price
   - [ ] Discounts
   - [x] Add to cart
@@ -29,9 +29,10 @@
 - [x] Suscription (Under a Registered User)
   - [ ] Suscribe or Cancel Subcription
  
-- [x] Usuario 
-  - [ ] Add or Delete
-  - [ ] Edit 
+- [ ] Usuario 
+  - [ ] Add a product
+  - [ ] Delete a product
+  - [ ] Edit a product
 
 - [ ] Follow Product (Under a Registered User)
   - [ ] Item(s)

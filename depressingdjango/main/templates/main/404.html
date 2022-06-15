@@ -1,0 +1,29 @@
+{%extends "main/base.html"%}
+{% load static %}
+{%block content%}
+<main>
+    <div class="container my-5 py-5 ">
+        <div class="d-flex justify-content-center ">
+            <div class="row py-5 ">
+
+                <div class="col-sm-6 d-flex justify-content-center justify-content-sm-end ">
+                    <img src='{% static "assets/img/error404.gif"%}' alt="confused dinosaur " width="128 " height="128 " />
+                </div>
+
+                <div class="col-sm-6 text-center text-md-start ">
+                    <p>
+                        <h1><strong>Pagina en mantenimiento</strong></h1>
+                    </p>
+                    <p>
+                        <h4>Intentelo mas tarde</h4>
+                    </p>
+                </div>
+
+                <div class="col-sm-12 d-flex justify-content-center ">
+                    <p><a href="/">Volver a la pagina principal</a></p>
+                </div>
+            </div>
+        </div>
+</main>
+{%endblock%}
+{%block footerPlace%}fixed-bottom{%endblock%}

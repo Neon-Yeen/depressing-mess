@@ -1,0 +1,26 @@
+{% extends "main/base.html"%}
+{% load crispy_forms_tags%}
+{%block content%}
+<main class="fondo-login">
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="row py-5">
+                <div class="col rounded-3" style=" background-color: #ebf2fa;">
+                    <div class="main">
+                        <!-- Create a Form -->
+                        <form method="POST">
+                            <!-- Security token by Django -->
+                            {% csrf_token %}
+                            Estas seguro que quieres borrar este producto?
+                            <input type="submit" class="btn btn-danger" value="Si"/>
+                            <a class="btn btn-primary" href="/list" role="button">No</a>
+                            
+                        </form>
+                    </div>
+               </div>
+            </div>
+         </div>
+    </div>
+</main>
+{%endblock%}
+{%block footerPlace%}fixed-bottom{%endblock%}

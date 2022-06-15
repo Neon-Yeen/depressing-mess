@@ -1,0 +1,80 @@
+{% extends "main/base.html"%}
+{% load static %}
+{% load crispy_forms_tags%}
+{%block content%}
+{%if user.is_authenticated%}
+<main class="fondo-login">
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="row py-5">
+                <div class="col rounded-3" style=" background-color: #ebf2fa;">
+                    <div class="main">
+                        
+                        <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Stock</th>
+                                <th scope="col">Ultima modificacion</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                            {% for data in dataset %}
+                         
+                                  <tr>
+                                    <th scope="row">{{ data.product_id }}</th>
+                                    <td>{{ data.product_name }}</td>
+                                    <td>${{ data.product_price }}</td>
+                                    <td>{{ data.product_stock }}.und</td>
+                                    <td>{{ data.modified }}</td>
+                                    <td><a class="btn btn-primary" href="/update/{{data.id}}" role="button">Editar</a></td>
+                                    <td><a class="btn btn-danger" href="/delete/{{data.id}}" role="button">Eliminar</a></td>
+                                  </tr>
+                                
+                        
+                        {% endfor %}
+                    </tbody>
+                </table>
+                        <a class="btn btn-primary" href="/create" role="button">Añadir producto</a>
+                        
+
+
+                        
+                                    
+                    </div>
+               </div>
+            </div>
+         </div>
+    </div>
+</main>
+{%else%}
+<main>
+    <div class="container my-5 py-5 ">
+        <div class="d-flex justify-content-center ">
+            <div class="row py-5 ">
+
+                <div class="col-sm-6 d-flex justify-content-center justify-content-sm-end ">
+                    <img src='{% static "assets/img/noaccess.png"%}' alt="confused dinosaur " width="128 " height="128 " />
+                </div>
+
+                <div class="col-sm-6 text-center text-md-start ">
+                    <p>
+                        <h1><strong>Accesso Denegado</strong></h1>
+                    </p>
+                    <p>
+                        <h4>Privilegios insuficientes</h4>
+                    </p>
+                </div>
+
+                <div class="col-sm-12 d-flex justify-content-center ">
+                    <p><a href="/">Volver a la pagina principal</a></p>
+                </div>
+            </div>
+        </div>
+</main>
+{%endif%}
+
+{%endblock%}
+{%block footerPlace%}fixed-bottom{%endblock%}
