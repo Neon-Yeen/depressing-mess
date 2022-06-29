@@ -51,9 +51,4 @@ cd depressing-mess/depressingdjango
 python manage.py runserver
 ```
 
-- take a snapshot of the staging area (anything that's been added)
-```
-git commit -m "my snapshot"
-```
-
 # Felicidades, ejecutaste el proyecto !!!
