@@ -54,8 +54,74 @@
         </div>
 
         <!-- productos -->
-        <div class="container-fluid" style=" background-color: #ebf2fa;">
+        <div class="container" style=" background-color: #ebf2fa;">
             <div class="py-5 ">
+
+<div class="container" id="plants">
+
+                    <div class="row">
+                        <p>
+                            <h1>Droga Sabrosa</h1>
+                        </p>
+                    </div>
+                </div>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            {% for data in dataset %}
+
+                <div class="container p-2 border">
+
+                    
+                        <div class="col">
+                            <a href="/404" class="cardlink">
+                                <div class="card shadow-sm">
+{% get_static_prefix as STATIC_PREFIX %}
+<img class="itemfp mt-2" src="{{STATIC_PREFIX}}assets/img/plantas/{{data.product_img}}" alt="{{data.product_img}}" </svg>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-title font-weight-light"><small>{{ data.product_name }}</small></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <p class="card-text"><b>$ {{ data.product_price }} UND</b></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="card-text"><button type="button" class="btn btn-primary"><i class="bi-basket"></i> Agregar a la canasta</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                </div> 
+
+                        
+                        {% endfor %}
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <div class="container" id="plants">
                     <div class="row">
                         <p>
