@@ -12,7 +12,7 @@ git clone https://github.com/Neon-Yeen/depressing-mess
 ```
 ## Dependencias
 
-###[Python 3.10.5](https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz)
+### [Python 3.10.5](https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz)
 
 - Django
 ```
@@ -56,4 +56,4 @@ python manage.py runserver
 git commit -m "my snapshot"
 ```
 
-#Felicidades, ejecutaste el proyecto !!!
+# Felicidades, ejecutaste el proyecto !!!
