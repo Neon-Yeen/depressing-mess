@@ -4,55 +4,54 @@
 
 ## [Git Tutorial](https://docs.github.com/en/get-started/using-git/about-git)
 
-### Dependencias
+### Clonar el repositorio
 
-Descarguen el repositorio bajo git
+-Descarguen el repositorio bajo git
 ```
 git clone https://github.com/Neon-Yeen/depressing-mess
 ```
-Dependencias
+### Dependencias
 
-[Python 3.10.5](https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz)
+##[Python 3.10.5](https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz)
 
-Django
+-Django
 ```
 pip install django
 ```
 
-Crispy Forms
+-Crispy Forms
 ```
 pip install django-crispy-forms
 ```
 
-Django Rest Framework
+-Django Rest Framework
 ```
 pip install djangorestframework
 ```
 
-Markdown
+-Markdown
 ```
 pip install markdown
 ```
 
-Django Filter
+-Django Filter
 ```
 pip install django-filter
 ```
 
-### Iniciar Django
+### Ejecutar el proyecto
 
-Entren a la carpeta del repositorio
+-Entren a la carpeta del repositorio
 ```
 cd depressing-mess/depressingdjango
-
 ```
 
-Inicien el servidor 
+-Inicien el servidor 
 ```
 python manage.py runserver
 ```
 
-take a snapshot of the staging area (anything that's been added)
+-take a snapshot of the staging area (anything that's been added)
 ```
 git commit -m "my snapshot"
 ```
