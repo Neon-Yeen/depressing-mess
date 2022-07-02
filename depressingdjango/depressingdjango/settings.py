@@ -15,6 +15,9 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+import cx_Oracle
+cx_Oracle.init_oracle_client(config_dir="/home/ny/Code/SQL/guttedwallet/bin")
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -79,12 +82,13 @@ WSGI_APPLICATION = 'depressingdjango.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase', # This is where you put the name of the db file. 
-                 # If one doesn't exist, it will be created at migration time.
+DATABASES={
+    'default':
+    {
+    'ENGINE':'django.db.backends.oracle',
+    'NAME':'db20220623171419_low',
+    'USER':'planteria',
+    'PASSWORD':'Plantas75369511',#Please provide the db password here
     }
 }
 # Password validation
